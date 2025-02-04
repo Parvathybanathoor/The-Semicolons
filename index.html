@@ -1,0 +1,54 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn gennie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>learn gennie</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Task Planner -->
+        <div class="planner">
+            <h2>Study Tasks</h2>
+            <div id="taskList">
+                <!-- Dynamically added tasks will appear here -->
+            </div>
+            <input type="text" id="newTaskInput" placeholder="Add a new task" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div class="progress">
+            <h2>Progress</h2>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-bar-fill"></div>
+            </div>
+            <p id="progressText">Progress: 0%</p>
+        </div>
+
+        <!-- Rewards Section -->
+        <div class="reward points" id="reward section /div>
+            <h2>Rewards</h2>
+            <div id="reward points">total points 
+            <div id="reward" class="reward"></div>
+        </div>
+    </div>
+
+    <!-- Background Customization -->
+    <div class="background-btns">
+        <h3>Customize Background</h3>
+        <button onclick="changeBackground('lightblue')">Light Blue</button>
+        <button onclick="changeBackground('lightgreen')">Light Green</button>
+        <button onclick="changeBackground('lightyellow')">Light Yellow</button>
+        <button onclick="changeBackground('lightpink')">Light Pink</button>
+        <button onclick="changeBackground('purple')">purple</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
